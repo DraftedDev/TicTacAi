@@ -357,6 +357,11 @@ class Main {
             }
         }
 
+        //else if field in the centre is free, place o on it
+        if (table[4] == '-') {
+            return 4;
+        }
+
         //else
         Random random = new Random();
         int returnInt = random.nextInt(8);
